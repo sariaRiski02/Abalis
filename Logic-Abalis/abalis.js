@@ -13,7 +13,7 @@ recognition.onresult = async function(event) { // ini adalah event ketika hasil 
       transcript += event.results[i][0].transcript; // ini adalah hasil rekaman yang sudah diolah
     }
   }
-  document.getElementById('code-block').textContent = transcript; // ini adalah untuk menampilkan hasil rekaman ke dalam elemen dengan id code-block
+  document.getElementById('code-block').textContent = transcript + " "; // ini adalah untuk menampilkan hasil rekaman ke dalam elemen dengan id code-block
 
 
 // console.log(await res.json()); // hanya untuk debugging
@@ -53,4 +53,42 @@ startButton.addEventListener('click', function() { // ini adalah event ketika to
   }
 });
 
+let clear = document.getElementById('clear'); // ini adalah elemen button untuk menghapus hasil rekaman
+clear.addEventListener('click', function() { // ini adalah event ketika tombol clear ditekan
+  transcript = ''; // mengosongkan variabel transcript
+  document.getElementById('code-block').textContent = ''; // mengosongkan elemen code-block
+});
 
+
+// ===========  feature translate text di tunda dulu ============ //
+
+
+// api form main.py
+
+// // Tentukan teks yang ingin Anda terjemahkan
+// const textToTranslate = transcript;
+
+// // Persiapkan data yang akan dikirim sebagai payload JSON
+// const data = {
+//   text: textToTranslate
+// };
+
+// // Konfigurasi permintaan
+// const requestOptions = {
+//   method: 'POST',
+//   headers: {
+//     'Content-Type': 'application/json'
+//   },
+//   body: JSON.stringify(data)
+// };
+
+// // Kirim permintaan ke API
+// fetch('http://localhost:5000/translate', requestOptions)
+//   .then(response => response.json())
+//   .then(data => {
+//     // Tampilkan teks terjemahan yang diterima dari API
+//     console.log("Teks terjemahan:", data.translated_text);
+//   })
+//   .catch(error => {
+//     console.error('Error:', error);
+//   });
