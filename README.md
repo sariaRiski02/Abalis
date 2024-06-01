@@ -8,18 +8,6 @@ Selamat datang di Abalis - Alat Bantu Tulis! Abalis adalah proyek akhir untuk se
 
 Abalis adalah platform yang dirancang khusus untuk membantu para penulis dalam menulis menggunakan pengenalan suara. Dengan fitur konversi suara ke teks yang disediakan oleh Abalis, pengguna dapat mengonversi percakapan suara mereka menjadi teks secara langsung, memungkinkan mereka untuk menulis tanpa perlu mengetik.
 
-## Fitur Utama
-
-- **Pengenalan Suara ke Teks**: Konversi percakapan suara pengguna menjadi teks secara real-time.
-- **Editor Teks**: Dapatkan pengalaman menulis yang lancar dengan editor teks yang ramah pengguna.
-- **Manajemen Proyek**: Buat dan kelola proyek tulisan Anda dengan mudah.
-
-## Cara Menggunakan
-
-1. **Registrasi atau Masuk**: Daftar akun baru atau masuk dengan akun yang sudah ada.
-2. **Mulai Rekaman**: Aktifkan fitur pengenalan suara dan mulai merekam percakapan suara Anda.
-3. **Konversi ke Teks**: Abalis akan secara otomatis mengonversi suara Anda menjadi teks.
-4. **Edit dan Simpan**: Edit teks hasil konversi dan simpan dalam proyek Anda.
 
 ## Kontribusi
 
